@@ -106,6 +106,14 @@ img {
 
 .sidebar .nav-item {
     position: relative;
+    margin-top: 10px;
+}
+
+#active a {
+    background-color: white;
+    color: #103C6E;
+
+
 }
 
 .sidebar-dark .nav-item .nav-link {
