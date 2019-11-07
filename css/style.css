@@ -229,13 +229,21 @@ li {
     margin-left: auto;
 }
 
-.formControl {
+/* .formControl {
     padding-right: .75rem;
     padding-left: .75rem;
     margin-right: auto;
     margin-left: auto;
     width: 55%;
     padding-top: 150px;
+} */
+
+form {
+    padding: 100px;
+}
+
+#nextBtn {
+    margin-top: 25px;
 }
 
 .mb-4, .my-4 {
