@@ -242,8 +242,16 @@ form {
     padding: 100px;
 }
 
+#prevBtn {
+    float: left;
+}
+
 #nextBtn {
-    margin-top: 25px;
+    float: right;
+}
+
+.navbuttons {
+    align-items: center;
 }
 
 .mb-4, .my-4 {
