@@ -34,3 +34,21 @@ function next() {
     step1.classList.add("is-active");
   }
 }
+
+//Billing Address
+
+var form = $('#myForm'),
+    checkbox = $('#changeShip'),
+    chShipBlock = $('#changeShipInputs');
+
+chShipBlock.hide();
+
+checkbox.on('click', function() {
+    if($(this).is(':checked')) {
+      chShipBlock.show();
+      chShipBlock.find('input').attr('required', true);
+    } else {
+      chShipBlock.hide();
+      chShipBlock.find('input').attr('required', false);
+    }
+})
