@@ -112,6 +112,7 @@ img {
 #active a {
     background-color: white;
     color: #103C6E;
+    border-right: .25em solid rgb(255, 123, 0)!important;
 
 
 }
@@ -140,7 +141,9 @@ li {
     width: 100%;
     text-align: left;
     padding: 1rem;
-    width: 14rem;
+    
+
+
 }}
 
 
@@ -312,12 +315,17 @@ form {
 }
 
 .serviceChoice {
-    border-style: solid;
-    border-color: #e4e4e4;
+    border-top: .25em solid #005DA8!important;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 50px;
-    background-color: #e9ebee;
+    background-color: #fff;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.service-Header {
+    color: #005DA8!important;
+    padding-bottom: 5px;
 }
 
 .box {
@@ -326,5 +334,16 @@ form {
 
 
 .scrollspy-example {
-    
-    }
+    position: relative;
+    height: 250px;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+  .scrolly {
+      padding-top: 20px;
+      padding-bottom: 50px;
+  }
+
+  .nextbut {
+     padding-bottom: 20px;
+  }
