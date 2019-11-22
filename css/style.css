@@ -310,3 +310,21 @@ form {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 
 }
+
+.serviceChoice {
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #e9ebee;
+}
+
+.box {
+    display: none;
+}
+
+
+.scrollspy-example {
+    
+    }

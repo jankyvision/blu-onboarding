@@ -52,3 +52,46 @@ checkbox.on('click', function() {
       chShipBlock.find('input').attr('required', false);
     }
 })
+
+$(document).ready(function(){
+  $('input[type="checkbox"]').click(function(){
+      var inputValue = $(this).attr("value");
+      $("." + inputValue).toggle();
+  });
+});
+
+// // Ocean Imports
+// var form = $('#myForm'),
+//     checkbox = $('#oceanImports'),
+//     chShipBlock = $('#oceanImportsInputs');
+
+// chShipBlock.hide();
+
+// checkbox.on('click', function() {
+//     if($(this).is(':checked')) {
+//       chShipBlock.show();
+//       chShipBlock.find('input').attr('required', true);
+//     } else {
+//       chShipBlock.hide();
+//       chShipBlock.find('input').attr('required', false);
+//     }
+// })
+
+// // Ocean Exports
+
+// var form = $('#myForm'),
+//     checkbox = $('#oceanExports'),
+//     chShipBlock = $('#oceanExportsInputs');
+
+// chShipBlock.hide();
+
+// checkbox.on('click', function() {
+//     if($(this).is(':checked')) {
+//       chShipBlock.show();
+//       chShipBlock.find('input').attr('required', true);
+//     } else {
+//       chShipBlock.hide();
+//       chShipBlock.find('input').attr('required', false);
+//     }
+// })
+
