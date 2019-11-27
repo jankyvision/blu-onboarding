@@ -16,6 +16,14 @@ body {
         display: none!important;
        }
 
+       /* .navbar-nav {
+       display: none!important;
+    } */
+
+    .sidebar {
+        font-size: 12px!important;
+    }
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -152,7 +160,7 @@ img {
 }
 
 .sidebar .nav-item .nav-link {
-    text-align: center;
+    text-align: left;
     padding: 1rem 1rem;
     /* width: 6.5rem; */
 }
