@@ -16,6 +16,13 @@
 </head>
 <body id="page-top">
 
+<nav class="navbar">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <div class="sidebar-brand-logo">
+            <img src="./img/BluLogo(white).png" class="logo-full"></div>
+      </a>
+  </nav>
+
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -25,7 +32,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
               <div class="sidebar-brand-logo">
-                  <img src="./img/BluLogo(white).png" class="logo-full"></div>
+                  <img src="./img/BluLogo(white).png" class="side-bar-logo"></div>
             </a>
       
             <!-- Divider -->
@@ -52,7 +59,7 @@
             </li>     
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-              <a class="nav-link" href="">
+              <a class="nav-link" href="thankyou.html">
                 <i class="fab fa-angellist"></i>
                 <span>Thank You</span></a>
             </li>  
@@ -61,9 +68,8 @@
               <a class="nav-link" href="">
                 <i class="fas fa-info"></i>
                 <span>Help</span></a>
-            </li> 
+            </li>
             
-      
             </ul>
           <!-- End of Sidebar -->
 
@@ -74,68 +80,37 @@
     <!-- Main Content -->
     <div id="content">
 
+      <!-- Top Bar  -->
+
+      <!-- Progress Bar 1 -->
+        <div class="container">
+            <ul class="progressbar">
+                    <!-- <li class="active">Your Information</li> -->
+                <li class="active">Your Information</li>
+                <li class="active">Service Requirements</li>
+                <li>Documents Needed</li>
+                <li>Thank You!</li>
+            </ul>
+        </div>
+    
+            <!-- Progress Bar 1 -->
 
     <!-- Begin Page Content -->
     <div class="container-fluid">
 
-
-        <!-- Progress Bar 1 -->
-    <div class="container">
-        <ul class="progressbar">
-                <!-- <li class="active">Your Information</li> -->
-            <li class="active">Your Information</li>
-            <li class="active">Service Requirements</li>
-            <li>Documents Needed</li>
-            <li>Thank You!</li>
-        </ul>
-    </div>
-
-        <!-- Progress Bar 1 -->
-
-        <!-- <form class="formControl">
-                <div class="form-group">
-                       
-                                <label for="inputAddress">First Name</label>
-                          <input type="text" class="form-control" placeholder="First name">
-                        </div>
-
-                        <div class="form-group">
-                        
-                                <label for="inputAddress">Last Name</label>
-                          <input type="text" class="form-control" placeholder="Last name">
-                   
-                      </div>
-                <div class="form-group">
-                  <label for="inputAddress">Email</label>
-                  <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Company Name</label>
-                  <input type="text" class="form-control" id="inputCompanyname" placeholder="Company Name">
-                </div>
-                <div class="form-group">
-                        <label for="inputAddress2">EIN Number</label>
-                        <input type="text" class="form-control" id="inputEINnumber" placeholder="EIN Number">
-                      </div>
-                               
-              </form> -->
-
+      <div class="formControl">
 
               <form class="" id="myForm" action="#">
-
-
-          
-
                 <div class="form-row serviceChoice">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-lg-4">
                     <label for="inputEmail4">Commodity</label>
                     <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Commodity">
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-lg-4">
                     <label for="inputPassword4">Inco Terms</label>
                     <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Inco Terms">
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-lg-4">
                     <label for="inputPassword4">Forcasted Monthly Shipments</label>
                     <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                   </div>
@@ -148,34 +123,34 @@
               
                 <div class="form-group row">
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="oceanImports" id="gridCheck1">
-                      <label class="form-check-label" for="gridCheck1">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="oceanImports" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">
                         Ocean Import
                       </label>
 
                     </div>
                   </div>
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="airImports" id="gridCheck2">
-                      <label class="form-check-label" for="gridCheck2">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="airImports" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">
                         Air Import
                       </label>
                     </div>
                   </div>
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="isfFiling" id="gridCheck3">
-                      <label class="form-check-label" for="gridCheck3">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="isfFiling" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3">
                         ISF Filing
                       </label>
                     </div>
                   </div>
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="ftl" id="gridCheck4">
-                      <label class="form-check-label" for="gridCheck4">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="ftl" id="gridCheck4">
+                      <label class="custom-control-label" for="gridCheck4">
                         FTL 
                       </label>
                     </div>
@@ -185,100 +160,86 @@
 
                 <div class="form-group row">
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="oceanExports" id="gridCheck5">
-                      <label class="form-check-label" for="gridCheck5">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="oceanExports" id="gridCheck5">
+                      <label class="custom-control-label" for="gridCheck5">
                         Ocean Export
                       </label>
                     </div>
                   </div>
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="airExport" id="gridCheck6">
-                      <label class="form-check-label" for="gridCheck6">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="airExport" id="gridCheck6">
+                      <label class="custom-control-label" for="gridCheck6">
                         Air Export
                       </label>
                     </div>
                   </div>
-                  <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="lclImport" id="gridCheck7">
-                      <label class="form-check-label" for="gridCheck7">
-                        LCL Import
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox"
-                      name="serviceReq" value="ltl" id="gridCheck8">
-                      <label class="form-check-label" for="gridCheck8">
-                        LTL 
-                      </label>
-                    </div>
-                  </div>
 
-                </div>
-
-                <div class="form-group row">
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="chb" id="gridCheck9">
-                      <label class="form-check-label" for="gridCheck9">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="chb" id="gridCheck9">
+                      <label class="custom-control-label" for="gridCheck9">
                         CHB
                       </label>
                     </div>
                   </div>
+                
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="warehousing" id="gridCheck10">
-                      <label class="form-check-label" for="gridCheck10">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox"
+                      name="serviceReq" value="ltl" id="gridCheck8">
+                      <label class="custom-control-label" for="gridCheck8">
+                        LTL 
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+
+                  <div class="col-lg-3">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="warehousing" id="gridCheck10">
+                      <label class="custom-control-label" for="gridCheck10">
                         Warehousing
                       </label>
                     </div>
                   </div>
                   <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="lclExport"id="gridCheck11">
-                      <label class="form-check-label" for="gridCheck11">
-                        LCL Export
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="serviceReq" value="drayage" id="gridCheck12">
-                      <label class="form-check-label" for="gridCheck12">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="drayage" id="gridCheck12">
+                      <label class="custom-control-label" for="gridCheck12">
                         Drayage 
                       </label>
                     </div>
                   </div>
 
-
+                  <div class="col-lg-3">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="transload" id="gridCheck13">
+                      <label class="custom-control-label" for="gridCheck13">
+                        Transload
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" name="serviceReq" value="pom" id="gridCheck14">
+                      <label class="custom-control-label" for="gridCheck14">
+                        POM
+                      </label>
+                    </div>
+                  </div>
                   </div>
 
                   <div class="form-group row">
-                    <div class="col-lg-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="serviceReq" value="transload" id="gridCheck13">
-                        <label class="form-check-label" for="gridCheck13">
-                          Transload
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="serviceReq" value="pom" id="gridCheck14">
-                        <label class="form-check-label" for="gridCheck14">
-                          POM
-                        </label>
-                      </div>
-                    </div>
 
-                    <div class="col-lg-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck15">
-                        <label class="form-check-label" for="gridCheck15">
+
+                    <div class="col-lg-12">
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="gridCheck15">
+                        <label class="custom-control-label" for="gridCheck15">
                           <input type="Other" class="form-control" id="inputOther4" placeholder="Other">
                         </label>
                       </div>
@@ -295,33 +256,175 @@
               <div class="serviceChoice oceanImports box">
                   <h6>Ocean Import</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputEmail4">Origin Port</label>
                         <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputPassword4">Destination Port</label>
                         <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Choose...</option>
+                          <option value="1">FCL</option>
+                          <option value="2">LCL</option>
+                        </select>
+                    </div>
+                  </div>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
                         <label for="inputPassword4">Forcasted Monthly Shipments</label>
                         <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                       </div>
+                    <div class="form-group col-lg-6">
+                      <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
+                      <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
                     </div>
+                  </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-6">
                           <label for="inputEmail4">Carrier Preference (if any)</label>
                           <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-6">
                           <label for="inputPassword4">Transit Time Preference (if any)</label>
                           <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                         </div>
-                        <div class="form-group col-md-4">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-lg-12">
                           <label for="inputPassword4">Special Routing Requirements</label>
                           <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
                         </div>
                       </div>
+                      <div class="form-row">
+                      <div class="col-lg-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="serviceReq" value="portPair2" id="gridCheck16">
+                            <label class="form-check-label" for="gridCheck16">
+                              Click to add more Port Pairs!
+                            </label>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class=" portPair2 box">
+                            <h6>Port Pair 2</h6>
+                            <div class="form-row">
+                                <div class="form-group col-lg-4">
+                                  <label for="inputEmail4">Origin Port</label>
+                                  <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                  <label for="inputPassword4">Destination Port</label>
+                                  <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
+                                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>Choose...</option>
+                                    <option value="1">FCL</option>
+                                    <option value="2">LCL</option>
+                                  </select>
+                              </div>
+                            </div>
+                              <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                  <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                                  <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                </div>
+                              <div class="form-group col-lg-6">
+                                <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
+                                <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
+                              </div>
+                            </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                    <label for="inputEmail4">Carrier Preference (if any)</label>
+                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                    <label for="inputPassword4">Transit Time Preference (if any)</label>
+                                    <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-lg-12">
+                                    <label for="inputPassword4">Special Routing Requirements</label>
+                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" name="serviceReq" value="portPair3" id="gridCheck17">
+                                      <label class="form-check-label" for="gridCheck17">
+                                        Click to add more Port Pairs!
+                                      </label>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div class=" portPair3 box">
+                                      <h6>Port Pair 3</h6>
+                                      <div class="form-row">
+                                          <div class="form-group col-lg-4">
+                                            <label for="inputEmail4">Origin Port</label>
+                                            <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                          </div>
+                                          <div class="form-group col-lg-4">
+                                            <label for="inputPassword4">Destination Port</label>
+                                            <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                          </div>
+                                          <div class="form-group col-lg-4">
+                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
+                                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                              <option selected>Choose...</option>
+                                              <option value="1">FCL</option>
+                                              <option value="2">LCL</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                        <div class="form-row">
+                                          <div class="form-group col-lg-6">
+                                            <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                                            <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                          </div>
+                                        <div class="form-group col-lg-6">
+                                          <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
+                                          <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
+                                        </div>
+                                      </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6">
+                                              <label for="inputEmail4">Carrier Preference (if any)</label>
+                                              <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                            </div>
+                                            <div class="form-group col-lg-6">
+                                              <label for="inputPassword4">Transit Time Preference (if any)</label>
+                                              <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                            </div>
+                                          </div>
+                                          <div class="form-row">
+                                            <div class="form-group col-lg-12">
+                                              <label for="inputPassword4">Special Routing Requirements</label>
+                                              <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                            </div>
+                                          </div>
+                                          <div class="form-row">
+                                          <div class="col-lg-6">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="serviceReq" value="portPair4" id="gridCheck18">
+                                                <label class="form-check-label" for="gridCheck18">
+                                                  Click to add more Port Pairs!
+                                                </label>
+                                              </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                          </div>
                 </div>
 
                 <!-- Ocean Import End -->
@@ -331,29 +434,45 @@
               <div class="serviceChoice oceanExports box">
                   <h6>Ocean Exports</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputEmail4">Origin Port</label>
                         <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputPassword4">Destination Port</label>
                         <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Choose...</option>
+                          <option value="1">FCL</option>
+                          <option value="2">LCL</option>
+                        </select>
+                    </div>
+                  </div>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
                         <label for="inputPassword4">Forcasted Monthly Shipments</label>
                         <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                       </div>
+                    <div class="form-group col-lg-6">
+                      <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
+                      <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
                     </div>
+                  </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-6">
                           <label for="inputEmail4">Carrier Preference (if any)</label>
                           <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-6">
                           <label for="inputPassword4">Transit Time Preference (if any)</label>
                           <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                         </div>
-                        <div class="form-group col-md-4">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-lg-12">
                           <label for="inputPassword4">Special Routing Requirements</label>
                           <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
                         </div>
@@ -367,7 +486,7 @@
               <div class="serviceChoice chb box">
                   <h6>Customs House Brokerage</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Have you imported before? </label>
                           <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                             <option selected>Choose...</option>
@@ -376,7 +495,7 @@
                             <option value="3">I dont know</option>
                           </select>
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Do you have a tariff database?</label>
                           <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                             <option selected>Choose...</option>
@@ -385,7 +504,7 @@
                             <option value="3">I dont know</option>
                           </select>
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Select the type of bond?</label>
                           <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                             <option selected>Choose...</option>
@@ -396,17 +515,18 @@
                       </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
-                            
+                        <div class="form-group col-lg-4">
                             <label for="inputPassword4">Any government agencies involved? (ie: FDA/NTHSA/EPA)</label>
                         <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Any government agencies involved? (ie: FDA/NTHSA/EPA)">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
+                            <label for="inputPassword4">Forcasted Monthly Entries</label>
+                            <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Entries">
+                          </div>
+                      
+                        <div class="form-group col-lg-4">
                           <label for="inputPassword4">Do you have any special requirements?</label>
                           <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Special Requirements">
-                        </div>
-                        <div class="form-group col-md-4">
-                         
                         </div>
                       </div>
                 </div>
@@ -418,33 +538,41 @@
               <div class="serviceChoice airImports box">
                   <h6>Air Imports</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputEmail4">Origin Port</label>
                         <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputPassword4">Destination Port</label>
                         <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                       </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+
+                      <div class="form-group col-lg-4">
+                        <label for="inputEmail4">Carrier Preference (if any)</label>
+                        <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
                       </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label for="inputEmail4">Carrier Preference (if any)</label>
-                          <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
-                        </div>
-                        <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
+                        <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                      </div>
+                      <div class="form-group col-lg-4">
+                        <label for="inputPassword4">Forcasted Monthly Volume (measurement in KG)</label>
+                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                      </div>
+                        <div class="form-group col-lg-4">
                           <label for="inputPassword4">Transit Time Preference (if any)</label>
                           <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                         </div>
-                        <div class="form-group col-md-4">
-                          <label for="inputPassword4">Special Routing Requirements</label>
-                          <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
-                        </div>
+
                       </div>
+                      <div class="form-row">
+                          <div class="form-group col-lg-12">
+                            <label for="inputPassword4">Special Routing Requirements</label>
+                            <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                          </div>
+                        </div>
                 </div>
 
                 <!-- Air Import End -->
@@ -454,35 +582,41 @@
               <div class="serviceChoice airExport box">
                   <h6>Air Exports</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputEmail4">Origin Port</label>
                         <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputPassword4">Destination Port</label>
                         <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
                         <label for="inputPassword4">Forcasted Monthly Shipments</label>
                         <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                       </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label for="inputEmail4">Carrier Preference (if any)</label>
-                          <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
-                        </div>
-                        <div class="form-group col-md-4">
+                      <div class="form-group col-lg-4">
+                        <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                      </div>
+                      <div class="form-group col-lg-4">
+                        <label for="inputPassword4">Forcasted Monthly Volume (measurement in KG)</label>
+                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                      </div>
+                        <div class="form-group col-lg-4">
                           <label for="inputPassword4">Transit Time Preference (if any)</label>
                           <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                         </div>
-                        <div class="form-group col-md-4">
-                          <label for="inputPassword4">Special Routing Requirements</label>
-                          <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
-                        </div>
-                      </div>
-                </div>
 
+                      </div>
+                      <div class="form-row">
+                          <div class="form-group col-lg-12">
+                            <label for="inputPassword4">Special Routing Requirements</label>
+                            <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                          </div>
+                        </div>
+                </div>
                 <!-- Air Export End -->
 
                 <!-- Warehousing Start -->
@@ -490,24 +624,24 @@
               <div class="serviceChoice warehousing box">
                   <h6>Warehousing</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-6">
+                      <div class="form-group col-lg-6">
                           <label for="inputAddress">Address</label>
                           <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                       </div>
-                      <div class="form-group col-md-6">
+                      <div class="form-group col-lg-6">
                           <label for="inputAddress2">Address 2</label>
                           <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                       </div>
               
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
 
                             <label for="inputCity">City</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="City">
                             
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
                             <label for="inputState">State</label>
                             <select id="inputState" class="form-control">
                               <option selected>Choose...</option>
@@ -563,13 +697,13 @@
                               <option>Wyoming</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
                             <label for="inputZip">Zip</label>
                             <input type="text" class="form-control" id="inputZip">
                         </div>
                       </div>
                       <div class="form-row">
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
                               <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Live unload or drop required?</label>
                             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                               <option selected>Choose...</option>
@@ -578,11 +712,11 @@
                               <option value="3">I dont know</option>
                             </select>
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
                               <label for="inputZip">Working Hours?</label>
                             <input type="text" class="form-control" id="Working hour?">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
                               <label for="inputZip">Preffered Trucker?</label>
                             <input type="text" class="form-control" id="Preffered Trucker?">
                           </div>
@@ -590,7 +724,7 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-lg-12">
                                 <label for="inputAddress">Any special requirements?</label>
                                 <input type="text" class="form-control" id="inputAddress" placeholder="Special requirements?">
                             </div>
@@ -604,14 +738,14 @@
               <div class="serviceChoice isfFiling box">
                   <h6>ISF Filing</h6>
                   <div class="form-row">
-                      <div class="form-group col-md-12">
+                      <div class="form-group col-lg-12">
                         <label for="inputEmail4">Please list documents:</label>
                         <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="ISF documents">
                       </div>
                       
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Do we need to notify anyone of the ISF Filing?</label>
                             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                               <option selected>Choose...</option>
@@ -620,11 +754,11 @@
                               <option value="3">I dont know</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
                             <label for="inputPassword4">If yes, then to whom?</label>
                             <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Name of person we will need to notify.">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4">
                           <label for="inputPassword4">Notify Email</label>
                           <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Email of person we will be notifying.">
                         </div>
@@ -638,24 +772,24 @@
                 <div class="serviceChoice drayage box">
                     <h6>Drayage</h6>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-lg-6">
                             <label for="inputAddress">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-lg-6">
                             <label for="inputAddress2">Address 2</label>
                             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                         </div>
                 
                       </div>
                       <div class="form-row">
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
   
                               <label for="inputCity">City</label>
                               <input type="text" class="form-control" id="inputCity" placeholder="City">
                               
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
                               <label for="inputState">State</label>
                               <select id="inputState" class="form-control">
                                 <option>Alabama</option>
@@ -710,13 +844,13 @@
                                 <option>Wyoming</option>
                               </select>
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group col-lg-4">
                               <label for="inputZip">Zip</label>
                               <input type="text" class="form-control" id="inputZip">
                           </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Live unload or drop required?</label>
                               <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option selected>Choose...</option>
@@ -725,11 +859,11 @@
                                 <option value="3">I dont know</option>
                               </select>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label for="inputZip">Working Hours?</label>
                               <input type="text" class="form-control" id="Working hours">
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-lg-4">
                                 <label for="inputZip">Preffered Trucker?</label>
                               <input type="text" class="form-control" id="Preffered Trucker">
                             </div>
@@ -737,7 +871,7 @@
                           </div>
   
                           <div class="form-row">
-                              <div class="form-group col-md-12">
+                              <div class="form-group col-lg-12">
                                   <label for="inputAddress">Any special requirements?</label>
                                   <input type="text" class="form-control" id="inputAddress" placeholder="Special requirements?">
                               </div>
@@ -748,31 +882,34 @@
 
 
                 <div class="navbuttons">
-                    <div class="" id="prevBtn">
-                      
-                      <a href="index.html" type="submit" class="btn btn-primary">Previous</a>
-                    </div>
-                    <div class="" id="nextBtn">
-                      
-                      <a href="documentsNeeded.html" type="submit" class="btn btn-primary">Next</a>
-                    </div>
+                  <div class="col-6 col-sm-3" id="prevBtn">
+                    <a href="index.html" class="btn btn-secondary">Previous</a>
+                  </div>
+                    <div class="col-6 col-sm-3" id="nextBtn">
+                        <a href="documentsNeeded.html" class="btn btn-primary">Next</a>
+                      </div>
                   </div>
               </form>
-
+            </div>
+            
 
     </div>
+
+    
+     <!-- Footer -->
+     <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Blu Logistics 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
     </div>
-
-          
-
-
+  </div>
 
     
-  
-    
-    <!-- Bootstrap -->
-
-  
+    <!-- Bootstrap -->  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
