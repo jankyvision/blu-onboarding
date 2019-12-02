@@ -89,41 +89,7 @@ $(document).ready(function(){
   });
 });
 
-// // Ocean Imports
-// var form = $('#myForm'),
-//     checkbox = $('#oceanImports'),
-//     chShipBlock = $('#oceanImportsInputs');
-
-// chShipBlock.hide();
-
-// checkbox.on('click', function() {
-//     if($(this).is(':checked')) {
-//       chShipBlock.show();
-//       chShipBlock.find('input').attr('required', true);
-//     } else {
-//       chShipBlock.hide();
-//       chShipBlock.find('input').attr('required', false);
-//     }
-// })
-
-// // Ocean Exports
-
-// var form = $('#myForm'),
-//     checkbox = $('#oceanExports'),
-//     chShipBlock = $('#oceanExportsInputs');
-
-// chShipBlock.hide();
-
-// checkbox.on('click', function() {
-//     if($(this).is(':checked')) {
-//       chShipBlock.show();
-//       chShipBlock.find('input').attr('required', true);
-//     } else {
-//       chShipBlock.hide();
-//       chShipBlock.find('input').attr('required', false);
-//     }
-// })
-
+// Check Box Function
 $(function () {
   $('.button-checkbox').each(function () {
 
@@ -188,5 +154,15 @@ $(function () {
       }
       init();
   });
+});
+
+
+
+var $tabs = $('.tabs-wrapper li');
+$('#prevtab').on('click', function() {
+    $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+});
+$('#nexttab').on('click', function() {
+    $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
 });
 
