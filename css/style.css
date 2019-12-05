@@ -50,7 +50,7 @@ body {
     }
 
     .nav-fill .nav-item {
-        font-size: 8px!important;
+        font-size: 1.2vw!important;
     }
 
 }
@@ -641,6 +641,12 @@ svg {
            -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
            clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
        }
+
+            /* first link should not have anything cliped on the left side */
+            .breadcrumb li:last-child {
+                -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+                clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 50%, calc(100% - 0px) 100%, 0 100%, 15px 50%);
+            }
    
        .label{
            height: 100%;
@@ -652,5 +658,5 @@ svg {
         flex: 1 1 auto;
         text-align: center;
         width: 25%;
-        
+        font-size: 1vw;
     }
