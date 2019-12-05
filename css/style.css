@@ -606,8 +606,7 @@ svg {
            background: #ddd;
            background-color: #e9ecef!important;
            display: inline-block!important;
-           padding: 1px;
-           padding-right: 15px;
+           padding: 1px!important;
  
    
        }
@@ -656,5 +655,5 @@ svg {
         flex: 1 1 auto;
         text-align: center;
         width: 25%;
-        font-size: 1vh;
+        font-size: 1.3vh;
     }
