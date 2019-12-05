@@ -597,7 +597,7 @@ svg {
     background-color:#fff;
     }
     .nav-pills > li > a {
-        /* padding:10px 70px; */
+        padding: .5rem 1rem;
     }
      .nav-pills > li.active {
      border-bottom:3px solid #005DA8!important;
@@ -652,5 +652,5 @@ svg {
         flex: 1 1 auto;
         text-align: center;
         width: 25%;
-        font-size: 1vh;
+        
     }
