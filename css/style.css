@@ -49,6 +49,10 @@ body {
         margin: 0px;
     }
 
+    .nav-fill .nav-item {
+        font-size: 8px!important;
+    }
+
 }
 
 
@@ -648,5 +652,5 @@ svg {
         flex: 1 1 auto;
         text-align: center;
         width: 25%;
-        font-size: 1vw;
+        font-size: 1vh 1vw;
     }
