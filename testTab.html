@@ -60,7 +60,7 @@
                 <a class="nav-link" data-toggle="pill" href="#pills-3" role="tab">Documents Needed</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#pills-4" role="tab">Thank You!</a>
+                <a class="nav-link disabled" data-toggle="pill" href="#pills-4" role="tab">Thank You!</a>
             </li>
         </ul>
         </div>
@@ -77,35 +77,35 @@
                                   
                                     </div>
 
-                                    <form class="" id="myForm" action="#">
+                                    <form class="" id="myForm" action="/sign_up" method="post">
                                             <div class="form-row">
                                               <div class="form-group col-md-6">
                                                 <label for="inputEmail4">First Name</label>
-                                                <input type="firstname" class="form-control" id="inputfirstname4" placeholder="First Name">
+                                                <input name="firstname" class="form-control" id="inputfirstname4" placeholder="First Name">
                                               </div>
                                               <div class="form-group col-md-6">
                                                 <label for="inputPassword4">Last Name</label>
-                                                <input type="lastname" class="form-control" id="inputlastname4" placeholder="Last Name">
+                                                <input name="lastname" class="form-control" id="inputlastname4" placeholder="Last Name">
                                               </div>
                                             </div>
                             
                                             <div class="form-row">
                                               <div class="form-group col-md-6">
                                                 <label for="inputEmail4">Company Name</label>
-                                                <input type="firstname" class="form-control" id="inputfirstname4" placeholder="Company Name">
+                                                <input name="company" class="form-control" id="inputfirstname4" placeholder="Company Name">
                                               </div>
                                               <div class="form-group col-md-6">
                                                 <label for="inputPassword4">Email</label>
-                                                <input type="lastname" class="form-control" id="inputlastname4" placeholder="Email">
+                                                <input name="email" class="form-control" id="inputlastname4" placeholder="Email">
                                               </div>
                                             </div>
                                             <div class="form-group">
                                               <label for="inputAddress">Address</label>
-                                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                              <input name="address1" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                             </div>
                                             <div class="form-group">
                                               <label for="inputAddress2">Address 2</label>
-                                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                              <input name="address2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                             </div>
                                             <div class="form-row">
                                               <div class="form-group col-md-6">
@@ -171,7 +171,7 @@
                                               </div>
                                               <div class="form-group col-md-2">
                                                 <label for="inputZip">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
+                                                <input name="zip" class="form-control" id="inputZip">
                                               </div>
                                             </div>
                             
@@ -187,16 +187,16 @@
                                             <div id="changeShipInputs">
                                               <div class="form-group">
                                                 <label for="inputAddress">Billing Address</label>
-                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                <input name="billingaddress1" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                               </div>
                                               <div class="form-group">
                                                 <label for="inputAddress2">Address 2</label>
-                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                <input name="billingaddress2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                               </div>
                                               <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                   <label for="inputCity">City</label>
-                                                  <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                                  <input name="billingaddresscity" class="form-control" id="inputCity" placeholder="City">
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                   <label for="inputState">State</label>
@@ -256,7 +256,7 @@
                                                 </div>
                                                 <div class="form-group col-md-2">
                                                   <label for="inputZip">Zip</label>
-                                                  <input type="text" class="form-control" id="inputZip">
+                                                  <input name="billingaddresszip" class="form-control" id="inputZip">
                                                 </div>
                                               </div>
                                             </div>
@@ -267,29 +267,29 @@
                                             <div class="form-row">
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputEmail4">First Name</label>
-                                                  <input type="firstname" class="form-control" id="inputfirstname1" placeholder="First Name">
+                                                  <input name="decisionmakerfirstname" class="form-control" id="inputfirstname1" placeholder="First Name">
                                                 </div>
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputPassword4">Last Name</label>
-                                                  <input type="lastname" class="form-control" id="inputlastname1" placeholder="Last Name">
+                                                  <input name="decisionmakerlastname" class="form-control" id="inputlastname1" placeholder="Last Name">
                                                 </div>
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputPassword4">Job Title</label>
-                                                  <input type="jobtitle" class="form-control" id="inputjobTitle1" placeholder="Job Title">
+                                                  <input name="decisionmakerjobtitle" class="form-control" id="inputjobTitle1" placeholder="Job Title">
                                                 </div>
                                               </div>
                                               <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputEmail4">Work Number</label>
-                                                    <input type="worknumber" class="form-control" id="inputworknumber1" placeholder="Work Number">
+                                                    <input name="decisionmakerworkphone" class="form-control" id="inputworknumber1" placeholder="Work Number">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Mobile Number</label>
-                                                    <input type="mobilenumber" class="form-control" id="inputmobilenumber1" placeholder="Mobile Number">
+                                                    <input name="decisionmakermobilephone" class="form-control" id="inputmobilenumber1" placeholder="Mobile Number">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Email</label>
-                                                    <input type="email" class="form-control" id="inputemail1" placeholder="Email">
+                                                    <input name="decisionmakeremail" class="form-control" id="inputemail1" placeholder="Email">
                                                   </div>
                                                 </div>
                             
@@ -301,29 +301,29 @@
                                           <div class="form-row">
                                               <div class="form-group col-lg-4">
                                                 <label for="inputEmail4">First Name</label>
-                                                <input type="firstname" class="form-control" id="inputfirstname2" placeholder="First Name">
+                                                <input name="usacontactfirstname" class="form-control" id="inputfirstname2" placeholder="First Name">
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Last Name</label>
-                                                <input type="lastname" class="form-control" id="inputlastname2" placeholder="Last Name">
+                                                <input name="usacontactlastname" class="form-control" id="inputlastname2" placeholder="Last Name">
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Job Title</label>
-                                                <input type="jobtitle" class="form-control" id="inputjobTitle2" placeholder="Job Title">
+                                                <input name="usacontactjobtitle" class="form-control" id="inputjobTitle2" placeholder="Job Title">
                                               </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputEmail4">Work Number</label>
-                                                  <input type="worknumber" class="form-control" id="inputworknumber2" placeholder="Work Number">
+                                                  <input name="usacontactworkphone" class="form-control" id="inputworknumber2" placeholder="Work Number">
                                                 </div>
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputPassword4">Mobile Number</label>
-                                                  <input type="mobilenumber" class="form-control" id="inputmobilenumber2" placeholder="Mobile Number">
+                                                  <input name="usacontactmobilephone" class="form-control" id="inputmobilenumber2" placeholder="Mobile Number">
                                                 </div>
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputPassword4">Email</label>
-                                                  <input type="email" class="form-control" id="inputemail2" placeholder="Email">
+                                                  <input name="usacontactemail" class="form-control" id="inputemail2" placeholder="Email">
                                                 </div>
                                               </div>
                                             </div>
@@ -335,28 +335,28 @@
                                           <div class="form-row">
                                               <div class="form-group col-lg-4">
                                                 <label for="inputEmail4">First Name</label>
-                                                <input type="firstname" class="form-control" id="inputfirstname4" placeholder="First Name">
+                                                <input name="accountingcontactfirstname" class="form-control" id="inputfirstname4" placeholder="First Name">
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Last Name</label>
-                                                <input type="lastname" class="form-control" id="inputlastname4" placeholder="Last Name">
+                                                <input name="accountingcontactlastname" class="form-control" id="inputlastname4" placeholder="Last Name">
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Job Title</label>
-                                                <input type="jobtitle" class="form-control" id="inputjobTitle4" placeholder="Job Title">
+                                                <input name="accountingcontactjobtitle" class="form-control" id="inputjobTitle4" placeholder="Job Title">
                                               </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputEmail4">Work Number</label>
-                                                  <input type="worknumber" class="form-control" id="inputworknumber4" placeholder="Work Number">
+                                                  <input name="accountingcontactworkphone" class="form-control" id="inputworknumber4" placeholder="Work Number">
                                                 </div>
                                                 <div class="form-group col-lg-4">
                                                   <label for="inputPassword4">Mobile Number</label>
-                                                  <input type="mobilenumber" class="form-control" id="inputmobilenumber4" placeholder="Mobile Number">
+                                                  <input name="accountingcontactmobilephone" class="form-control" id="inputmobilenumber4" placeholder="Mobile Number">
                                                 </div>
                                                 <div class="form-group col-lg-4">
-                                                  <label for="inputPassword4">Email</label>
+                                                  <label for="accountingcontactemail">Email</label>
                                                   <input type="email" class="form-control" id="inputemail4" placeholder="Email">
                                                 </div>
                                               </div>
@@ -369,29 +369,29 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputEmail4">First Name</label>
-                                                    <input type="firstname" class="form-control" id="inputfirstname5" placeholder="First Name">
+                                                    <input name="additionalcontactfirstname" class="form-control" id="inputfirstname5" placeholder="First Name">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Last Name</label>
-                                                    <input type="lastname" class="form-control" id="inputlastname5" placeholder="Last Name">
+                                                    <input name="additionalcontactlastname" class="form-control" id="inputlastname5" placeholder="Last Name">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Job Title</label>
-                                                    <input type="jobtitle" class="form-control" id="inputjobTitle5" placeholder="Job Title">
+                                                    <input name="additionalcontactjobtitle" class="form-control" id="inputjobTitle5" placeholder="Job Title">
                                                   </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputEmail4">Work Number</label>
-                                                      <input type="worknumber" class="form-control" id="inputworknumber5" placeholder="Work Number">
+                                                      <input name="additionalcontactworkphone" class="form-control" id="inputworknumber5" placeholder="Work Number">
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputPassword4">Mobile Number</label>
-                                                      <input type="mobilenumber" class="form-control" id="inputmobilenumber5" placeholder="Mobile Number">
+                                                      <input name="additionalcontactmobilephone" class="form-control" id="inputmobilenumber5" placeholder="Mobile Number">
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputPassword4">Email</label>
-                                                      <input type="email" class="form-control" id="inputemail5" placeholder="Email">
+                                                      <input name="additionalcontactemail" class="form-control" id="inputemail5" placeholder="Email">
                                                     </div>
                                                   </div>
                             
@@ -417,7 +417,7 @@
                                             <div class="form-row serviceChoice">
                                               <div class="form-group col-lg-4">
                                                 <label for="inputEmail4">Commodity</label>
-                                                <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Commodity">
+                                                <input name="commodity" class="form-control" id="inputCommodity4" placeholder="Commodity">
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 
@@ -439,7 +439,7 @@
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                <input name="forcastedmonthlyvolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                                               </div>
                                             </div>
                             
@@ -585,11 +585,11 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputEmail4">Origin Port</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                                    <input name="oceanimportoriginport" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Destination Port</label>
-                                                    <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                                    <input name="oceanimportdestinationport" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
@@ -603,27 +603,27 @@
                                                 <div class="form-row">
                                                   <div class="form-group col-lg-6">
                                                     <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                    <input name="oceanimportmonthlyshipments" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                                                   </div>
                                                 <div class="form-group col-lg-6">
                                                   <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
-                                                  <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
+                                                  <input name="oceanimportforcastedvolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
                                                 </div>
                                               </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-lg-6">
                                                       <label for="inputEmail4">Carrier Preference (if any)</label>
-                                                      <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                                      <input name="oceanimportcarrierpreference" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
                                                     </div>
                                                     <div class="form-group col-lg-6">
                                                       <label for="inputPassword4">Transit Time Preference (if any)</label>
-                                                      <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                                      <input name="oceanimporttransittimepreference" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                                                     </div>
                                                   </div>
                                                   <div class="form-row">
                                                     <div class="form-group col-lg-12">
                                                       <label for="inputPassword4">Special Routing Requirements</label>
-                                                      <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                                      <input name="oceanimportspecialroutingrequirements" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
                                                     </div>
                                                   </div>
                                                   <div class="form-row">
@@ -760,52 +760,52 @@
                             
                                           <div class="serviceChoice oceanExports box">
                                               <h6>Ocean Exports</h6>
-                                              <div class="form-row">
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputEmail4">Origin Port</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
-                                                  </div>
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputPassword4">Destination Port</label>
-                                                    <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
-                                                  </div>
-                                                  <div class="form-group col-lg-4">
-                                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
-                                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                                      <option selected>Choose...</option>
-                                                      <option value="1">FCL</option>
-                                                      <option value="2">LCL</option>
-                                                    </select>
-                                                </div>
-                                              </div>
                                                 <div class="form-row">
-                                                  <div class="form-group col-lg-6">
-                                                    <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                    <div class="form-group col-lg-4">
+                                                      <label for="inputEmail4">Origin Port</label>
+                                                      <input name="oceanexportoriginport" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                                    </div>
+                                                    <div class="form-group col-lg-4">
+                                                      <label for="inputPassword4">Destination Port</label>
+                                                      <input name="oceanexportdestinationport" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                                    </div>
+                                                    <div class="form-group col-lg-4">
+                                                      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">FCL or LCL? </label>
+                                                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">FCL</option>
+                                                        <option value="2">LCL</option>
+                                                      </select>
                                                   </div>
-                                                <div class="form-group col-lg-6">
-                                                  <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
-                                                  <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
                                                 </div>
-                                              </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-lg-6">
-                                                      <label for="inputEmail4">Carrier Preference (if any)</label>
-                                                      <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
-                                                    </div>
-                                                    <div class="form-group col-lg-6">
-                                                      <label for="inputPassword4">Transit Time Preference (if any)</label>
-                                                      <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
-                                                    </div>
-                                                  </div>
                                                   <div class="form-row">
-                                                    <div class="form-group col-lg-12">
-                                                      <label for="inputPassword4">Special Routing Requirements</label>
-                                                      <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                                    <div class="form-group col-lg-6">
+                                                      <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                                                      <input name="oceanexportmonthlyshipments" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                                                     </div>
+                                                  <div class="form-group col-lg-6">
+                                                    <label for="inputPassword4">Forcasted Volume in CBM or TEUS</label>
+                                                    <input name="oceanexportforcastedvolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Volume in CBM or TEUS">
                                                   </div>
-                                            </div>
-                            
+                                                </div>
+                                                  <div class="form-row">
+                                                      <div class="form-group col-lg-6">
+                                                        <label for="inputEmail4">Carrier Preference (if any)</label>
+                                                        <input name="oceanexportcarrierpreference" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                                      </div>
+                                                      <div class="form-group col-lg-6">
+                                                        <label for="inputPassword4">Transit Time Preference (if any)</label>
+                                                        <input name="oceanexporttransittimepreference" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                      <div class="form-group col-lg-12">
+                                                        <label for="inputPassword4">Special Routing Requirements</label>
+                                                        <input name="oceanexportspecialroutingrequirements" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                                      </div>
+                                                    </div>
+                                                  
+                                                      </div>
                                             <!-- Ocean Export End -->
                             
                                               <!-- CHB Start -->
@@ -844,16 +844,16 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-lg-4">
                                                         <label for="inputPassword4">Any government agencies involved? (ie: FDA/NTHSA/EPA)</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Any government agencies involved? (ie: FDA/NTHSA/EPA)">
+                                                    <input name="chbgovernmentagencies" class="form-control" id="inputmonthlyvolume" placeholder="Any government agencies involved? (ie: FDA/NTHSA/EPA)">
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                         <label for="inputPassword4">Forcasted Monthly Entries</label>
-                                                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Entries">
+                                                        <input name="chbforcastedmonthlyentries" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Entries">
                                                       </div>
                                                   
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputPassword4">Do you have any special requirements?</label>
-                                                      <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Special Requirements">
+                                                      <input name="chbspecialrequirements" class="form-control" id="inputIncoTerms4" placeholder="Special Requirements">
                                                     </div>
                                                   </div>
                                             </div>
@@ -867,37 +867,37 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputEmail4">Origin Port</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                                    <input name="airimportoriginport" class="form-control" id="inputCommodity4" placeholder="Origin Port">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Destination Port</label>
-                                                    <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                                    <input name="airimportdestinationport" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
                                                   </div>
                             
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputEmail4">Carrier Preference (if any)</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                                    <input name="airimportcarrierpreference" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
                                                   </div>
                                                 </div>
                                                 <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                    <input name="airimportforcastedshipments" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label for="inputPassword4">Forcasted Monthly Volume (measurement in KG)</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                    <input name="airimportforcastedsvolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
                                                   </div>
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputPassword4">Transit Time Preference (if any)</label>
-                                                      <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                                      <input name="airimporttransittimepreference" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                                                     </div>
                             
                                                   </div>
                                                   <div class="form-row">
                                                       <div class="form-group col-lg-12">
                                                         <label for="inputPassword4">Special Routing Requirements</label>
-                                                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
+                                                        <input name="airimportspecialrequirements" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
                                                       </div>
                                                     </div>
                                             </div>
@@ -909,41 +909,42 @@
                                           <div class="serviceChoice airExport box">
                                               <h6>Air Exports</h6>
                                               <div class="form-row">
+                                                <div class="form-group col-lg-4">
+                                                  <label for="inputEmail4">Origin Port</label>
+                                                  <input name="airexportoriginport" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                  <label for="inputPassword4">Destination Port</label>
+                                                  <input name="airexportdestinationport" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
+                                                </div>
+                          
+                                                <div class="form-group col-lg-4">
+                                                  <label for="inputEmail4">Carrier Preference (if any)</label>
+                                                  <input name="airexportcarrierpreference" class="form-control" id="inputCommodity4" placeholder="Carrier Preference">
+                                                </div>
+                                              </div>
+                                              <div class="form-row">
+                                                <div class="form-group col-lg-4">
+                                                  <label for="inputPassword4">Forcasted Monthly Shipments</label>
+                                                  <input name="airexportforcastedshipments" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                  <label for="inputPassword4">Forcasted Monthly Volume (measurement in KG)</label>
+                                                  <input name="airexportforcastedsvolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
+                                                </div>
                                                   <div class="form-group col-lg-4">
-                                                    <label for="inputEmail4">Origin Port</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Origin Port">
+                                                    <label for="inputPassword4">Transit Time Preference (if any)</label>
+                                                    <input name="airexporttransittimepreference" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
                                                   </div>
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputPassword4">Destination Port</label>
-                                                    <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Destination Port">
-                                                  </div>
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
-                                                  </div>
+                          
                                                 </div>
                                                 <div class="form-row">
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputPassword4">Forcasted Monthly Shipments</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
-                                                  </div>
-                                                  <div class="form-group col-lg-4">
-                                                    <label for="inputPassword4">Forcasted Monthly Volume (measurement in KG)</label>
-                                                    <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Forcasted Monthly Shipments">
-                                                  </div>
-                                                    <div class="form-group col-lg-4">
-                                                      <label for="inputPassword4">Transit Time Preference (if any)</label>
-                                                      <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Transit Time Preference">
+                                                    <div class="form-group col-lg-12">
+                                                      <label for="inputPassword4">Special Routing Requirements</label>
+                                                      <input name="airexportspecialrequirements" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
                                                     </div>
-                            
                                                   </div>
-                                                  <div class="form-row">
-                                                      <div class="form-group col-lg-12">
-                                                        <label for="inputPassword4">Special Routing Requirements</label>
-                                                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Special Routing Requirements">
-                                                      </div>
-                                                    </div>
-                                            </div>
+                                          </div>
                                             <!-- Air Export End -->
                             
                                             <!-- Warehousing Start -->
@@ -953,11 +954,11 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-6">
                                                       <label for="inputAddress">Address</label>
-                                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                      <input name="warehouseaddress1" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                                   </div>
                                                   <div class="form-group col-lg-6">
                                                       <label for="inputAddress2">Address 2</label>
-                                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                      <input name="warehouseaddress2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                                   </div>
                                           
                                                 </div>
@@ -965,7 +966,7 @@
                                                     <div class="form-group col-lg-4">
                             
                                                         <label for="inputCity">City</label>
-                                                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                                        <input name="warehousecity" class="form-control" id="inputCity" placeholder="City">
                                                         
                                                     </div>
                                                     <div class="form-group col-lg-4">
@@ -1026,7 +1027,7 @@
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                         <label for="inputZip">Zip</label>
-                                                        <input type="text" class="form-control" id="inputZip">
+                                                        <input name="warehousezip" class="form-control" id="inputZip">
                                                     </div>
                                                   </div>
                                                   <div class="form-row">
@@ -1034,18 +1035,18 @@
                                                           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Live unload or drop required?</label>
                                                         <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                           <option selected>Choose...</option>
-                                                          <option value="1">Yes</option>
-                                                          <option value="2">No</option>
+                                                          <option value="1">Live unload</option>
+                                                          <option value="2">Drop</option>
                                                           <option value="3">I dont know</option>
                                                         </select>
                                                       </div>
                                                       <div class="form-group col-lg-4">
                                                           <label for="inputZip">Working Hours?</label>
-                                                        <input type="text" class="form-control" id="Working hour?">
+                                                        <input name="warehouseworkinghours" class="form-control" id="Working hour?">
                                                       </div>
                                                       <div class="form-group col-lg-4">
                                                           <label for="inputZip">Preffered Trucker?</label>
-                                                        <input type="text" class="form-control" id="Preffered Trucker?">
+                                                        <input name="warehouseprefferedtrucker" class="form-control" id="Preffered Trucker?">
                                                       </div>
                                                       
                                                     </div>
@@ -1053,7 +1054,7 @@
                                                     <div class="form-row">
                                                         <div class="form-group col-lg-12">
                                                             <label for="inputAddress">Any special requirements?</label>
-                                                            <input type="text" class="form-control" id="inputAddress" placeholder="Special requirements?">
+                                                            <input name="warehousespecialrequirements" class="form-control" id="inputAddress" placeholder="Special requirements?">
                                                         </div>
                                                       </div>
                                             </div>
@@ -1067,7 +1068,7 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-12">
                                                     <label for="inputEmail4">Please list documents:</label>
-                                                    <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="ISF documents">
+                                                    <input name="isfdocs" class="form-control" id="inputCommodity4" placeholder="ISF documents">
                                                   </div>
                                                   
                                                 </div>
@@ -1083,11 +1084,11 @@
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                         <label for="inputPassword4">If yes, then to whom?</label>
-                                                        <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Name of person we will need to notify.">
+                                                        <input name="isfnotifyname" class="form-control" id="inputmonthlyvolume" placeholder="Name of person we will need to notify.">
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                       <label for="inputPassword4">Notify Email</label>
-                                                      <input type="MonthlyVolume" class="form-control" id="inputmonthlyvolume" placeholder="Email of person we will be notifying.">
+                                                      <input name="isfnotifyemail" class="form-control" id="inputmonthlyvolume" placeholder="Email of person we will be notifying.">
                                                     </div>
                                                   </div>
                                             </div>
@@ -1487,7 +1488,7 @@
                                                     <a class="btn btn-primary btnPrevious">Previous</a>
                                                   </div>
                                                     <div class="col-6 col-sm-3" id="nextBtn">
-                                                      <a class="btn btn-complete btnNext">Complete</a>
+                                                      <a href="thankyou.html" type="submit" id="submitDetails" name="submitDetails" value="Submit" class="btn btn-complete btnNext">Complete</a>
                                                       </div>
                                                      
                                                   </div>
@@ -1500,7 +1501,7 @@
 
                             <!-- Documents Needed End -->
 
-                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <!-- <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">
 
                                 <div class="textbox">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
@@ -1516,7 +1517,7 @@
                            
                               </div>
                               
-                            </div>
+                            </div> -->
                           </div>
                 
                   </div>
