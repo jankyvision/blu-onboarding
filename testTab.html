@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+
     <!-- Custom fonts for this template-->
  
 
@@ -28,7 +29,7 @@
   
       <!-- Sidebar -->
 
-          <!-- End of Sidebar -->
+      <!-- End of Sidebar -->
 
 
     <!-- Content Wrapper -->
@@ -55,29 +56,37 @@
 
 
 <div class="tabControl">
+  <div class="centerTab">
 
-        <div class="container">
+        <div class="container breadcrumb">
 
-                    <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                              <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Your Information</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Service Requirements</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Documents Needed</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Thank You!</a>
-                                  </li>
-                          </ul>
-
+          <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#pills-1" role="tab">Your Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-2" role="tab">Service Requirements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-3" role="tab">Documents Needed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-4" role="tab">Thank You!</a>
+            </li>
+        </ul>
         </div>
 
+      </div>
                           <!-- Your Information Tab -->
                           <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="textbox">
+
+                                    <h1 class="form-title">Welcome to Blu Logistics</h1>
+                                    <p>To ensure you receive the most optimal service please provide accurate and up to date information in the following form. We look forward to service your future shipments!</p>
+                                  
+                                  
+                                    </div>
 
                                     <form class="" id="myForm" action="#">
                                             <div class="form-row">
@@ -400,10 +409,9 @@
                                             </div>
                                         
                                             <div class="col-6 col-sm-3" id="nextBtn">
-                                            <!-- <button href="serviceReq.html" class="btn btn-primary">Next</button> -->
-                                            <a class="btn btn-primary nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="true">Next</a>
 
-                                        
+                                              <a class="btn btn-primary btnNext">Next</a>
+
                                           </div>
                                          
                                         </form>
@@ -423,8 +431,22 @@
                                                 <input type="Commodity" class="form-control" id="inputCommodity4" placeholder="Commodity">
                                               </div>
                                               <div class="form-group col-lg-4">
-                                                <label for="inputPassword4">Inco Terms</label>
-                                                <input type="IncoTerms" class="form-control" id="inputIncoTerms4" placeholder="Inco Terms">
+                                                
+                                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">INCO Terms </label>
+                                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                      <option selected>Choose...</option>
+                                                      <option value="1">EXW - EX WORKS</option>
+                                                      <option value="2">FCA - FREE CARRIER</option>
+                                                      <option value="2">FAS - FREE ALONGSIDE SHIP</option>
+                                                      <option value="2">FOB - FREE ON BOARD</option>
+                                                      <option value="2">CFR - COST & FREIGHT</option>
+                                                      <option value="2">CIF - COST INSURANCE & FREIGHT</option>
+                                                      <option value="2">CPT - CARRIAGE PAID TO</option>
+                                                      <option value="2">CIP - CARRIAGE INSURANCE PAID TO</option>
+                                                      <option value="2">DAT - DELIVERED AT TERMINAL</option>
+                                                      <option value="2">DAP - DELIVERED AT PLACE</option>
+                                                      <option value="2">DDP - DELIVER DUTY PAID</option>
+                                                    </select>
                                               </div>
                                               <div class="form-group col-lg-4">
                                                 <label for="inputPassword4">Forcasted Monthly Shipments</label>
@@ -1199,10 +1221,11 @@
                             
                                             <div class="navbuttons">
                                               <div class="col-6 col-sm-3" id="prevBtn">
-                                                    <a class="btn btn-primary nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Previous</a>
+                                                <a class="btn btn-primary btnPrevious">Previous</a>
+                                                    
                                               </div>
                                                 <div class="col-6 col-sm-3" id="nextBtn">
-                                                        <a class="btn btn-primary nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="true">Next</a>
+                                                  <a class="btn btn-primary btnNext">Next</a>
                                                   </div>
                                               </div>
                                           </form>
@@ -1472,10 +1495,10 @@
 
                                                 <div class="navbuttons">
                                                   <div class="col-6 col-sm-3" id="prevBtn">
-                                                        <a class="btn btn-primary nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="true">Previous</a>
+                                                    <a class="btn btn-primary btnPrevious">Previous</a>
                                                   </div>
                                                     <div class="col-6 col-sm-3" id="nextBtn">
-                                                            <a class="btn btn-primary nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="true">Next</a>
+                                                      <a class="btn btn-complete btnNext">Complete</a>
                                                       </div>
                                                      
                                                   </div>
@@ -1488,7 +1511,23 @@
 
                             <!-- Documents Needed End -->
 
-                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">Thank You</div>
+                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                                <div class="textbox">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                      <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                                      <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                    </svg>
+                                    <p class="success">Success!</p>
+                                  
+                
+                                <h1>Thank You & Welcome Aboard Blu Logistics! </h1>
+                                <h6>Your dedicated Blu team will be I touch. Let’s get ready to ship! </h6>
+                
+                           
+                              </div>
+                              
+                            </div>
                           </div>
                 
                   </div>
@@ -1518,5 +1557,6 @@
     <script src="https://kit.fontawesome.com/1b59bc20c8.js"></script>
 
     <script src="script.js"></script>
+    <script src="tabbar.js"></script>
 </body>
 </html>
