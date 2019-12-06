@@ -344,8 +344,6 @@ li {
         
 }
 
-
-
 .tabControl {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -353,17 +351,21 @@ li {
     margin-left: auto;
     width: 90%;
     padding-bottom:150px;
-
-
-   
 }
 
 .textbox {
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right:50px;
-    text-align: center;
-   
+    text-align: center;   
+}
+
+.textbox h1 {
+    font-size: 3vh;
+}
+
+.textbox p {
+    font-size: 2vh;
 }
 
 #prevBtn {
@@ -423,6 +425,15 @@ li {
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
     border-color: #005DA8!important;
 }
+
+.btn-complete {
+    color:#fff!important;
+    background-color: rgb(255, 136, 0)!important;
+    width: 100%;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    border-color: #005DA8!important;
+}
+
 
 .btn {
     display: inline-block;
