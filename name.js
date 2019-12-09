@@ -1,11 +1,11 @@
-app.post('/sign_up', function(req, res){
+app.post('/sign_up', function(req,res){
     var firstname = req.body.firstname;
     var lastname = req.body.lastname;
     var company = req.body.company;
     var email = req.body.email;
     var address1 = req.body.address1;
     var address2 = req.body.address2;
-
+    var state = req.body.state;
     var zip = req.body.zip;
     var billingaddress1 = req.body.billingaddress1;
     var billingaddress2 = req.body.billingaddress2;
@@ -42,7 +42,7 @@ app.post('/sign_up', function(req, res){
     var forcastedmonthlyvolume = req.body.forcastedmonthlyvolume;
     var oceanimportoriginport = req.body.oceanimportoriginport;
     var oceanimportdestinationport = req.body.oceanimportdestinationport;
-    var oceanimportmonthlyshipmentsess2 = req.body.oceanimportmonthlyshipmentsess2;
+    var oceanimportmonthlyshipments = req.body.oceanimportmonthlyshipments;
     var oceanimportforcastedvolume = req.body.oceanimportforcastedvolume;
     var oceanimporttransittimepreference = req.body.oceanimporttransittimepreference;
     var oceanimportspecialroutingrequirements = req.body.oceanimportspecialroutingrequirements;
@@ -92,13 +92,6 @@ app.post('/sign_up', function(req, res){
     var isfnotifyemail = req.body.isfnotifyemail;
 
 
-    
-
-
-
-
-})
-
 var data = {
     "firstname": firstname,
     "lastname": lastname,
@@ -106,12 +99,12 @@ var data = {
     "email": email,
     "address1": address1,
     "address2": address2,
-    // country drop down
+    "state": state,
     "zip": zip,
     "billingaddress1": billingaddress1,
     "billingaddress2": billingaddress2,
     "billingaddresscity": billingaddresscity,
-    // country drop down
+    "// State drop down"
     "billingaddresszip": billingaddresszip,
     "decisionmakerfirstname": decisionmakerfirstname,
     "decisionmakerlastname": decisionmakerlastname,
@@ -140,12 +133,10 @@ var data = {
 
     //Page 2: Service Requirements
     "commodity": commodity,
-    //incoterms
+    "incoterms": incoterms,
     "forcastedmonthlyvolume": forcastedmonthlyvolume,
-    "oceanimportoriginport": oceanimportoriginport,
-    "oceanimportdestinationport": oceanimportdestinationport,
-    //FCL or LCL
-    "oceanimportmonthlyshipmentsess2": oceanimportmonthlyshipments,
+    "oceanimportcontainer": oceanimportcontainer,
+    "oceanimportmonthlyshipments": oceanimportmonthlyshipments,
     "oceanimportforcastedvolume": oceanimportforcastedvolume,
     "oceanimporttransittimepreference": oceanimporttransittimepreference,
     "oceanimportspecialroutingrequirements": oceanimportspecialroutingrequirements,
