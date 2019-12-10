@@ -110,7 +110,7 @@
                                             <div class="form-row">
                                               <div class="form-group col-md-6">
                                                 <label>City</label>
-                                                <input type="text" class="form-control">
+                                                <input name="city" type="text" class="form-control">
                                               </div>
                                               <div class="form-group col-md-4">
                                                 <label>State</label>
@@ -199,7 +199,7 @@
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                   <label>State</label>
-                                                  <select name="state" id="inputState" class="form-control">
+                                                  <select name="billingaddressstate" id="inputState" class="form-control">
                                                     <option selected>Choose...</option>
                                                             <option value="Alabama">Alabama</option>
                                                             <option value="Alaska">Alaska</option>
@@ -592,7 +592,7 @@
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                     <label class="my-1 mr-2">FCL or LCL? </label>
-                                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                    <select name="oceanimportcontainersize" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                       <option selected>Choose...</option>
                                                       <option value="FCL">FCL</option>
                                                       <option value="LCL">LCL</option>
@@ -770,7 +770,7 @@
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                       <label class="my-1 mr-2">FCL or LCL? </label>
-                                                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                      <select name="oceanexportcontainersize" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                         <option selected>Choose...</option>
                                                         <option value="FCL">FCL</option>
                                                         <option value="LCL">LCL</option>
@@ -814,7 +814,7 @@
                                               <div class="form-row">
                                                   <div class="form-group col-lg-4">
                                                       <label class="my-1 mr-2">Have you imported before? </label>
-                                                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                      <select name="chbimportedbefore" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                         <option selected>Choose...</option>
                                                         <option value="YES">Yes</option>
                                                         <option value="NO">No</option>
@@ -823,7 +823,7 @@
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                       <label class="my-1 mr-2">Do you have a tariff database?</label>
-                                                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                      <select name="chbtariffdatabase" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                         <option selected>Choose...</option>
                                                         <option value="YES">Yes</option>
                                                         <option value="NO">No</option>
@@ -832,7 +832,7 @@
                                                   </div>
                                                   <div class="form-group col-lg-4">
                                                       <label class="my-1 mr-2">Select the type of bond?</label>
-                                                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                      <select name="chbbondtype" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                         <option selected>Choose...</option>
                                                         <option value="YES">Yes</option>
                                                         <option value="NO">No</option>
@@ -957,7 +957,7 @@
                                                   </div>
                                                   <div class="form-group col-lg-6">
                                                       <label>Address 2</label>
-                                                      <input name="warehouseaddress2" class="form-control" placeholder="Apartment, studio, or floor">
+                                                      <input name="warehouseaddress2" class="form-control" placeholder="Building, suite, or floor">
                                                   </div>
                                           
                                                 </div>
@@ -970,59 +970,59 @@
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                         <label>State</label>
-                                                        <select id="inputState" class="form-control">
+                                                        <select name="warehousestate" id="inputState" class="form-control">
                                                           <option selected>Choose...</option>
-                                                          <option>Alabama</option>
-                                                          <option>Alaska</option>
-                                                          <option>Arizona</option>
-                                                          <option>Arkansas</option>
-                                                          <option>California</option>
-                                                          <option>Colorado</option>
-                                                          <option>Connecticut</option>
-                                                          <option>Delaware</option>
-                                                          <option>Florida</option>
-                                                          <option>Georgia</option>
-                                                          <option>Hawaii</option>
-                                                          <option>Idaho</option>
-                                                          <option>Illinois</option>
-                                                          <option>Indiana</option>
-                                                          <option>Iowa</option>
-                                                          <option>Kansas</option>
-                                                          <option>Kentucky</option>
-                                                          <option>Louisiana</option>
-                                                          <option>Maine</option>
-                                                          <option>Maryland</option>
-                                                          <option>Massachusetts</option>
-                                                          <option>Michigan</option>
-                                                          <option>Minnesota</option>
-                                                          <option>Mississippi</option>
-                                                          <option>Missouri</option>
-                                                          <option>Montana</option>
-                                                          <option>Nebraska</option>
-                                                          <option>Nevada</option>
-                                                          <option>New Hampshire</option>
-                                                          <option>New Jersey</option>
-                                                          <option>New Mexico</option>
-                                                          <option>New York</option>
-                                                          <option>North Carolina</option>
-                                                          <option>North Dakota</option>
-                                                          <option>Ohio</option>
-                                                          <option>Oklahoma</option>
-                                                          <option>Oregon</option>
-                                                          <option>Pennsylvania</option>
-                                                          <option>Rhode Island</option>
-                                                          <option>South Carolina</option>
-                                                          <option>South Dakota</option>
-                                                          <option>Tennessee</option>
-                                                          <option>Texas</option>
-                                                          <option>Utah</option>
-                                                          <option>Vermont</option>
-                                                          <option>Virginia</option>
-                                                          <option>Washington</option>
-                                                          <option>West Virginia</option>
-                                                          <option>Wisconsin</option>
-                                                          <option>Wyoming</option>
-                                                        </select>
+                                                          <option value="Alabama">Alabama</option>
+                                                          <option value="Alaska">Alaska</option>
+                                                          <option value="Arizona">Arizona</option>
+                                                          <option value="Arkansas">Arkansas</option>
+                                                          <option value="California">California</option>
+                                                          <option value="Colorado">Colorado</option>
+                                                          <option value="Connecticut">Connecticut</option>
+                                                          <option value="Delaware">Delaware</option>
+                                                          <option value="Florida">Florida</option>
+                                                          <option value="Georgia">Georgia</option>
+                                                          <option value="Hawaii">Hawaii</option>
+                                                          <option value="Idaho">Idaho</option>
+                                                          <option value="Illinois">Illinois</option>
+                                                          <option value="Indiana">Indiana</option>
+                                                          <option value="Iowa">Iowa</option>
+                                                          <option value="Kansas">Kansas</option>
+                                                          <option value="Kentucky">Kentucky</option>
+                                                          <option value="Louisiana">Louisiana</option>
+                                                          <option value="Maine">Maine</option>
+                                                          <option value="Maryland">Maryland</option>
+                                                          <option value="Massachusetts">Massachusetts</option>
+                                                          <option value="Michigan">Michigan</option>
+                                                          <option value="Minnesota">Minnesota</option>
+                                                          <option value="Mississippi">Mississippi</option>
+                                                          <option value="Missouri">Missouri</option>
+                                                          <option value="Montana">Montana</option>
+                                                          <option value="Nebraska">Nebraska</option>
+                                                          <option value="Nevada">Nevada</option>
+                                                          <option value="New Hampshire">New Hampshire</option>
+                                                          <option value="New Jersey">New Jersey</option>
+                                                          <option value="New Mexico">New Mexico</option>
+                                                          <option value="New York">New York</option>
+                                                          <option value="North Carolina">North Carolina</option>
+                                                          <option value="North Dakota">North Dakota</option>
+                                                          <option value="Ohio">Ohio</option>
+                                                          <option value="Oklahoma">Oklahoma</option>
+                                                          <option value="Oregon">Oregon</option>
+                                                          <option value="Pennsylvania">Pennsylvania</option>
+                                                          <option value="Rhode Island">Rhode Island</option>
+                                                          <option value="South Carolina">South Carolina</option>
+                                                          <option value="South Dakota">South Dakota</option>
+                                                          <option value="Tennessee">Tennessee</option>
+                                                          <option value="Texas">Texas</option>
+                                                          <option value="Utah">Utah</option>
+                                                          <option value="Vermont">Vermont</option>
+                                                          <option value="Virginia">Virginia</option>
+                                                          <option value="Washington">Washington</option>
+                                                          <option value="West Virginia">West Virginia</option>
+                                                          <option value="Wisconsin">Wisconsin</option>
+                                                          <option value="Wyoming">Wyoming</option>
+                                                          </select>
                                                     </div>
                                                     <div class="form-group col-lg-4">
                                                         <label>Zip</label>
@@ -1032,10 +1032,10 @@
                                                   <div class="form-row">
                                                       <div class="form-group col-lg-4">
                                                           <label class="my-1 mr-2">Live unload or drop required?</label>
-                                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                        <select name="warehouseunloaddrop" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                           <option selected>Choose...</option>
-                                                          <option value="Live Unload">Live unload</option>
-                                                          <option value="Drop">Drop</option>
+                                                          <option value="LIVE UNLOAD">Live unload</option>
+                                                          <option value="DROP">Drop</option>
                                                           <option value="I DON'T KNOW">I dont know</option>
                                                         </select>
                                                       </div>
@@ -1074,7 +1074,7 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-lg-4">
                                                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Do we need to notify anyone of the ISF Filing?</label>
-                                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                        <select name="isfnotify" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                           <option selected>Choose...</option>
                                                           <option value="YES">Yes</option>
                                                           <option value="NO">No</option>
@@ -1101,11 +1101,11 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-lg-6">
                                                         <label>Address</label>
-                                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                        <input name="drayageaddress1" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                                     </div>
                                                     <div class="form-group col-lg-6">
                                                         <label>Address 2</label>
-                                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                        <input name="drayageaddress2" type="text" class="form-control" id="inputAddress2" placeholder="Building, suite, or floor">
                                                     </div>
                                             
                                                   </div>
@@ -1113,74 +1113,74 @@
                                                       <div class="form-group col-lg-4">
                               
                                                           <label>City</label>
-                                                          <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                                          <input name="drayagecity" type="text" class="form-control" id="inputCity" placeholder="City">
                                                           
                                                       </div>
                                                       <div class="form-group col-lg-4">
                                                           <label for="inputState">State</label>
-                                                          <select name="state1" id="inputState" class="form-control">
-                                                              <option selected>Choose...</option>
-                                                            <option value="">Alabama</option>
-                                                            <option value="">Alaska</option>
-                                                            <option value="">Arizona</option>
-                                                            <option value="">Arkansas</option>
-                                                            <option value="">California</option>
-                                                            <option value="">Colorado</option>
-                                                            <option value="">Connecticut</option>
-                                                            <option>Delaware</option>
-                                                            <option>Florida</option>
-                                                            <option>Georgia</option>
-                                                            <option>Hawaii</option>
-                                                            <option>Idaho</option>
-                                                            <option>Illinois</option>
-                                                            <option>Indiana</option>
-                                                            <option>Iowa</option>
-                                                            <option>Kansas</option>
-                                                            <option>Kentucky</option>
-                                                            <option>Louisiana</option>
-                                                            <option>Maine</option>
-                                                            <option>Maryland</option>
-                                                            <option>Massachusetts</option>
-                                                            <option>Michigan</option>
-                                                            <option>Minnesota</option>
-                                                            <option>Mississippi</option>
-                                                            <option>Missouri</option>
-                                                            <option>Montana</option>
-                                                            <option>Nebraska</option>
-                                                            <option>Nevada</option>
-                                                            <option>New Hampshire</option>
-                                                            <option>New Jersey</option>
-                                                            <option>New Mexico</option>
-                                                            <option>New York</option>
-                                                            <option>North Carolina</option>
-                                                            <option>North Dakota</option>
-                                                            <option>Ohio</option>
-                                                            <option>Oklahoma</option>
-                                                            <option>Oregon</option>
-                                                            <option>Pennsylvania</option>
-                                                            <option>Rhode Island</option>
-                                                            <option>South Carolina</option>
-                                                            <option>South Dakota</option>
-                                                            <option>Tennessee</option>
-                                                            <option>Texas</option>
-                                                            <option>Utah</option>
-                                                            <option>Vermont</option>
-                                                            <option>Virginia</option>
-                                                            <option>Washington</option>
-                                                            <option>West Virginia</option>
-                                                            <option>Wisconsin</option>
-                                                            <option>Wyoming</option>
-                                                          </select>
+                                                          <select name="drayagestate" id="inputState" class="form-control">
+                                                            <option selected>Choose...</option>
+                                                            <option value="Alabama">Alabama</option>
+                                                            <option value="Alaska">Alaska</option>
+                                                            <option value="Arizona">Arizona</option>
+                                                            <option value="Arkansas">Arkansas</option>
+                                                            <option value="California">California</option>
+                                                            <option value="Colorado">Colorado</option>
+                                                            <option value="Connecticut">Connecticut</option>
+                                                            <option value="Delaware">Delaware</option>
+                                                            <option value="Florida">Florida</option>
+                                                            <option value="Georgia">Georgia</option>
+                                                            <option value="Hawaii">Hawaii</option>
+                                                            <option value="Idaho">Idaho</option>
+                                                            <option value="Illinois">Illinois</option>
+                                                            <option value="Indiana">Indiana</option>
+                                                            <option value="Iowa">Iowa</option>
+                                                            <option value="Kansas">Kansas</option>
+                                                            <option value="Kentucky">Kentucky</option>
+                                                            <option value="Louisiana">Louisiana</option>
+                                                            <option value="Maine">Maine</option>
+                                                            <option value="Maryland">Maryland</option>
+                                                            <option value="Massachusetts">Massachusetts</option>
+                                                            <option value="Michigan">Michigan</option>
+                                                            <option value="Minnesota">Minnesota</option>
+                                                            <option value="Mississippi">Mississippi</option>
+                                                            <option value="Missouri">Missouri</option>
+                                                            <option value="Montana">Montana</option>
+                                                            <option value="Nebraska">Nebraska</option>
+                                                            <option value="Nevada">Nevada</option>
+                                                            <option value="New Hampshire">New Hampshire</option>
+                                                            <option value="New Jersey">New Jersey</option>
+                                                            <option value="New Mexico">New Mexico</option>
+                                                            <option value="New York">New York</option>
+                                                            <option value="North Carolina">North Carolina</option>
+                                                            <option value="North Dakota">North Dakota</option>
+                                                            <option value="Ohio">Ohio</option>
+                                                            <option value="Oklahoma">Oklahoma</option>
+                                                            <option value="Oregon">Oregon</option>
+                                                            <option value="Pennsylvania">Pennsylvania</option>
+                                                            <option value="Rhode Island">Rhode Island</option>
+                                                            <option value="South Carolina">South Carolina</option>
+                                                            <option value="South Dakota">South Dakota</option>
+                                                            <option value="Tennessee">Tennessee</option>
+                                                            <option value="Texas">Texas</option>
+                                                            <option value="Utah">Utah</option>
+                                                            <option value="Vermont">Vermont</option>
+                                                            <option value="Virginia">Virginia</option>
+                                                            <option value="Washington">Washington</option>
+                                                            <option value="West Virginia">West Virginia</option>
+                                                            <option value="Wisconsin">Wisconsin</option>
+                                                            <option value="Wyoming">Wyoming</option>
+                                                            </select>
                                                       </div>
                                                       <div class="form-group col-lg-4">
                                                           <label>Zip</label>
-                                                          <input type="text" class="form-control" id="inputZip">
+                                                          <input name="drayagezip" type="text" class="form-control">
                                                       </div>
                                                     </div>
                                                     <div class="form-row">
                                                         <div class="form-group col-lg-4">
                                                             <label class="my-1 mr-2">Live unload or drop required?</label>
-                                                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                                          <select name="drayageunloaddrop" class="custom-select my-1 mr-sm-2">
                                                             <option selected>Choose...</option>
                                                             <option value="YES">Yes</option>
                                                             <option value="NO">No</option>
@@ -1189,11 +1189,11 @@
                                                         </div>
                                                         <div class="form-group col-lg-4">
                                                             <label>Working Hours?</label>
-                                                          <input type="text" class="form-control" id="Working hours">
+                                                          <input name="drayageworkinghours" type="text" class="form-control">
                                                         </div>
                                                         <div class="form-group col-lg-4">
                                                             <label>Preffered Trucker?</label>
-                                                          <input type="text" class="form-control" id="Preffered Trucker">
+                                                          <input name="drayageprefferedtrucker" type="text" class="form-control">
                                                         </div>
                                                         
                                                       </div>
@@ -1201,7 +1201,7 @@
                                                       <div class="form-row">
                                                           <div class="form-group col-lg-12">
                                                               <label>Any special requirements?</label>
-                                                              <input type="text" class="form-control" id="inputAddress" placeholder="Special requirements?">
+                                                              <input name="drayagespecialrequirements" type="text" class="form-control" placeholder="Special requirements?">
                                                           </div>
                                                         </div>
                                               </div>
